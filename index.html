@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumedh Kotha - AI/ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .section-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section-fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-slate-900">Sumedh Kotha</a>
+            <div class="hidden md:flex space-x-6 text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#hackathons" class="hover:text-blue-600 transition">Hackathons</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#about" class="block hover:text-blue-600 transition">About</a>
+            <a href="#experience" class="block hover:text-blue-600 transition">Experience</a>
+            <a href="#projects" class="block hover:text-blue-600 transition">Projects</a>
+            <a href="#hackathons" class="block hover:text-blue-600 transition">Hackathons</a>
+            <a href="#skills" class="block hover:text-blue-600 transition">Skills</a>
+            <a href="#contact" class="block hover:text-blue-600 transition">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="hero" class="flex flex-col md:flex-row items-center justify-between gap-12 my-12 section-fade-in">
+            <div class="md:w-2/3">
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-4 text-slate-900">Hi, I'm Sumedh</h1>
+                <p class="text-xl text-slate-600 mb-6">An AI/ML Engineer passionate about building intelligent solutions and leveraging data to create impact. Specializing in Gen AI, RAG-based systems, and data analytics.</p>
+                <div class="flex items-center space-x-4">
+                    <a href="#contact" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">Get in Touch</a>
+                    <a href="https://github.com/whysumedh" target="_blank" class="text-slate-600 hover:text-blue-600 transition" aria-label="GitHub Profile">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg>
+                    </a>
+                     <a href="https://www.linkedin.com/in/sumedh-sai/" target="_blank" class="text-slate-600 hover:text-blue-600 transition" aria-label="LinkedIn Profile">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                    </a>
+                    <a href="https://leetcode.com/u/summdh/" target="_blank" class="hover:opacity-80 transition" aria-label="LeetCode Profile">
+                        <div class="w-8 h-8 bg-black rounded-md flex items-center justify-center p-1">
+                            <img src="https://assets.leetcode.com/static_assets/public/images/LeetCode_logo_rvs.png" alt="LeetCode Logo" class="w-full h-auto">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/3 flex justify-center">
+                <img class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg" src="https://i.ibb.co/bjt9d3Mv/1751794279179.jpg" alt="Sumedh Kotha">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12 text-slate-900">About Me</h2>
+            <div class="max-w-3xl mx-auto text-center text-slate-600 text-lg">
+                <p>I am a recent Computer Science graduate from the VIT Chennai 2025 batch, with a strong foundation in AI and Machine Learning. My professional journey includes internships and consulting roles where I've developed RAG-based AI chatbots, automated business workflows, and contributed to product development. I thrive in collaborative environments and am driven by the challenge of solving complex problems with technology. My work has been recognized in several national hackathons, and I am always eager to learn and apply new technologies to real-world scenarios.</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-white rounded-2xl shadow-lg section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12 text-slate-900">Work Experience</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="relative border-l-2 border-blue-200 pl-10 space-y-12">
+                     <!-- Timeline Item -->
+                     <div class="relative">
+                        <div class="absolute -left-[46px] top-1.5 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                        <p class="text-sm font-medium text-blue-600">Aug 2025 - Present</p>
+                        <h3 class="text-xl font-semibold mt-1">Associate AI/ML Engineer</h3>
+                        <p class="text-slate-500">D3V Technologies | Plano, Texas | Remote</p>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="relative">
+                        <div class="absolute -left-[46px] top-1.5 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                        <p class="text-sm font-medium text-blue-600">June 2025 - Aug 2025</p>
+                        <h3 class="text-xl font-semibold mt-1">Product Development Intern (Campus Placement)</h3>
+                        <p class="text-slate-500">Freyr Energy | Hyderabad</p>
+                        <ul class="mt-2 text-slate-600 list-disc list-inside space-y-1">
+                            <li>Configured and integrated Zoho Hooks to align with business workflows, ensuring automation.</li>
+                            <li>Analyzed and documented in-house team workflows and processes.</li>
+                            <li>Performed API testing to validate functionalities of the in-house developed FEP Platform.</li>
+                        </ul>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="relative">
+                        <div class="absolute -left-[46px] top-1.5 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                        <p class="text-sm font-medium text-blue-600">Feb 2024 - April 2024</p>
+                        <h3 class="text-xl font-semibold mt-1">AI Backend Engineer</h3>
+                        <p class="text-slate-500">C4Scale (Bluegenx.ai) | Remote</p>
+                        <ul class="mt-2 text-slate-600 list-disc list-inside space-y-1">
+                            <li>Contributed to a team developing RAG based AI chatbots for small scale enterprises.</li>
+                            <li>Extracted data & text from PDFs, websites and other sources using libraries like pdfminer, plumber, and scrapy.</li>
+                            <li>Worked with Google Docs API to extract formatted content.</li>
+                        </ul>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="relative">
+                        <div class="absolute -left-[46px] top-1.5 w-4 h-4 bg-blue-600 rounded-full border-4 border-white"></div>
+                        <p class="text-sm font-medium text-blue-600">Sept 2023 - Dec 2023</p>
+                        <h3 class="text-xl font-semibold mt-1">External Consultant (Intern)</h3>
+                        <p class="text-slate-500">Kore.ai (Mphasis) | Hyderabad</p>
+                        <ul class="mt-2 text-slate-600 list-disc list-inside space-y-1">
+                            <li>Specialized in building conversational AI chatbots using Kore.ai's platform.</li>
+                            <li>Developed demo chatbot templates using Kore.ai's SDK.</li>
+                            <li>Worked on a client-based project for Mashreq Bank UAE.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-12 text-slate-900">Projects & Open Source</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://i.ibb.co/fzP4Z2nm/1733489889085.jpg" alt="VIT Placements Tracker" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">VIT Placements Tracker</h3>
+                        <p class="text-slate-600 mb-4 flex-grow">A data analytics web app to monitor and visualize placement trends across VIT's 4 campuses, achieving 50,000+ user visits.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Google APIs</span>
+                        </div>
+                        <a href="https://vit-placements-tracker.streamlit.app/" target="_blank" class="font-semibold text-blue-600 hover:underline mt-auto">View Project &rarr;</a>
+                    </div>
+                </div>
+                 <!-- Project Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://i.ibb.co/60C2zs21/image.png" alt="AdCraft Project" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">AdCraft</h3>
+                        <p class="text-slate-600 mb-4 flex-grow">A tool to create and generate product-focused ad creatives using multiple generative and diffusion models for image manipulation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Flask</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Docker</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Replicate</span>
+                             <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">LLMs</span>
+                        </div>
+                        <a href="https://github.com/whysumedh/os-hack" target="_blank" class="font-semibold text-blue-600 hover:underline mt-auto">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+                 <!-- Project Card -->
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                    <img src="https://i.ibb.co/KSB8dmw/image.png" alt="7net.ai Project" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2">7net.ai</h3>
+                        <p class="text-slate-600 mb-4 flex-grow">An AI for Good solution to connect Thalassemia patients with blood donors, using ML for forecasting, Graph ML for risk analysis, and GraphRAG.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">GraphRAG</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Neo4j</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Azure ML</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">LightGBM</span>
+                        </div>
+                        <div class="flex items-center justify-between mt-auto">
+                            <a href="https://7net-ai.vercel.app/" target="_blank" class="font-semibold text-blue-600 hover:underline">View Concept &rarr;</a>
+                            <a href="https://docs.google.com/document/d/18T7blHOFEMXE-e0i3UfaxsKR6nea3Gkhu8JmYejkshw/edit?usp=sharing" target="_blank" class="text-sm text-slate-500 hover:text-blue-600">View Docs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hackathons Section -->
+        <section id="hackathons" class="py-20 bg-white rounded-2xl shadow-lg section-fade-in">
+            <h2 class="text-4xl font-bold text-center mb-4 text-slate-900">Hackathon Achievements</h2>
+            <p class="text-lg text-slate-600 text-center mb-12 max-w-2xl mx-auto">Thriving in competitive, fast-paced environments to build innovative solutions under pressure.</p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Hackathon Card 1 -->
+                <div class="bg-slate-50 rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <div id="appian-slider" class="relative w-full h-56 overflow-hidden bg-white">
+                        <div class="slider-track flex transition-transform duration-500 ease-in-out h-full">
+                            <img src="https://i.ibb.co/J8PMzYP/image.png" alt="Appian AI Challenge Photo 1" class="w-full h-full object-contain flex-shrink-0">
+                            <img src="https://i.ibb.co/KcxmgSPX/1704723203880.png" alt="Appian AI Challenge Photo 2" class="w-full h-full object-contain flex-shrink-0">
+                        </div>
+                        <button class="slider-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-1 hover:bg-opacity-60 focus:outline-none transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                        </button>
+                        <button class="slider-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-1 hover:bg-opacity-60 focus:outline-none transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-amber-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                                <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                            </svg>
+                            <h3 class="text-2xl font-bold text-slate-800">1st Place</h3>
+                        </div>
+                        <p class="text-lg font-semibold text-slate-700">Appian AI Challenge Hackathon</p>
+                        <p class="text-slate-500">IIT Madras</p>
+                    </div>
+                </div>
+                <!-- Hackathon Card 2 -->
+                 <div class="bg-slate-50 rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://i.ibb.co/prPPK05W/1737354761912.jpg" alt="Onlinesales.ai Hackathon Photo" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                         <div class="flex items-center gap-4 mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <h3 class="text-2xl font-bold text-slate-800">2nd Place</h3>
+                        </div>
+                        <p class="text-lg font-semibold text-slate-700">National Gen AI Hackathon</p>
+                        <p class="text-slate-500">Onlinesales.ai, Pune</p>
+                    </div>
+                </div>
+                <!-- Hackathon Card 3 -->
+                 <div class="bg-slate-50 rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <div id="ai4good-slider" class="relative w-full h-56 overflow-hidden bg-white">
+                        <div class="slider-track flex transition-transform duration-500 ease-in-out h-full">
+                            <img src="https://i.ibb.co/5gZ6d9gc/1756142814064.jpg" alt="AI4Good Hackathon Photo 1" class="w-full h-full object-contain flex-shrink-0">
+                            <img src="https://i.ibb.co/Ps98mR1N/1756142817072.jpg" alt="AI4Good Hackathon Photo 2" class="w-full h-full object-contain flex-shrink-0">
+                        </div>
+                        <button class="slider-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-1 hover:bg-opacity-60 focus:outline-none transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                        </button>
+                        <button class="slider-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-1 hover:bg-opacity-60 focus:outline-none transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-4 mb-2">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <h3 class="text-2xl font-bold text-slate-800">2nd Place</h3>
+                        </div>
+                        <p class="text-lg font-semibold text-slate-700">Blend's AI4Good Hackathon</p>
+                        <p class="text-slate-500">Hyderabad</p>
+                    </div>
+                </div>
+                <!-- Hackathon Card 4 -->
+                <div class="bg-slate-50 rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                     <div id="30hacks-slider" class="relative w-full h-56 overflow-hidden">
+                        <div class="slider-track flex transition-transform duration-500 ease-in-out h-full">
+                            <img src="https://i.ibb.co/vxGYJnYC/1710513027849.jpg" alt="30Hacks Hackathon Photo 1" class="w-full h-full object-cover flex-shrink-0">
+                            <img src="https://i.ibb.co/vxGYJnYC/1710513027849.jpg" alt="30Hacks Hackathon Photo 2" class="w-full h-full object-cover flex-shrink-0">
+                        </div>
+                        <button class="slider-prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-1 hover:bg-opacity-60 focus:outline-none transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                        </button>
+                        <button class="slider-next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-1 hover:bg-opacity-60 focus:outline-none transition-opacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    </div>
+                    <div class="p-6">
+                         <div class="flex items-center gap-4 mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <h3 class="text-2xl font-bold text-slate-800">Top Team</h3>
+                        </div>
+                        <p class="text-lg font-semibold text-slate-700">30Hacks Hackathon</p>
+                        <p class="text-slate-500">Hitachi, Delhi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- Skills Section -->
+        <section id="skills" class="py-20 section-fade-in">
+             <h2 class="text-4xl font-bold text-center mb-12 text-slate-900">Technical Skills</h2>
+             <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                 <div>
+                     <h3 class="text-xl font-semibold mb-4">Languages</h3>
+                     <ul class="space-y-2 text-slate-600">
+                         <li>Python</li>
+                         <li>C</li>
+                         <li>C++</li>
+                         <li>Java</li>
+                     </ul>
+                 </div>
+                 <div>
+                     <h3 class="text-xl font-semibold mb-4">Libraries/Frameworks</h3>
+                     <ul class="space-y-2 text-slate-600">
+                         <li>Langchain</li>
+                         <li>Llama-index</li>
+                         <li>JavaScript</li>
+                         <li>React</li>
+                         <li>Pdfplumber</li>
+                     </ul>
+                 </div>
+                 <div>
+                     <h3 class="text-xl font-semibold mb-4">Tools & Platforms</h3>
+                     <ul class="space-y-2 text-slate-600">
+                         <li>Miniforge</li>
+                         <li>Git</li>
+                         <li>GCP</li>
+                         <li>Azure CLI</li>
+                     </ul>
+                 </div>
+                 <div>
+                     <h3 class="text-xl font-semibold mb-4">Databases</h3>
+                     <ul class="space-y-2 text-slate-600">
+                         <li>SQL</li>
+                         <li>TiDB</li>
+                         <li>ArangoDB</li>
+                         <li>Neo4j</li>
+                     </ul>
+                 </div>
+             </div>
+        </section>
+        
+        <!-- Education & Certifications -->
+        <section id="education" class="py-20 section-fade-in">
+            <div class="grid md:grid-cols-5 gap-12">
+                <div class="md:col-span-2">
+                    <h2 class="text-3xl font-bold mb-6 text-slate-900">Education</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold">Vellore Institute of Technology, Chennai</h3>
+                            <p class="text-slate-500">B.Tech Computer Science & Engineering (2021-2025)</p>
+                            <p class="text-slate-600">CGPA: 8.60</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Ratna Junior College</h3>
+                            <p class="text-slate-500">12th Grade TSBIE</p>
+                            <p class="text-slate-600">Percentage: 96%</p>
+                        </div>
+                         <div>
+                            <h3 class="text-xl font-semibold">Johnson Grammar School</h3>
+                            <p class="text-slate-500">10th Grade ICSE</p>
+                            <p class="text-slate-600">Percentage: 90%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="text-3xl font-bold mb-6 text-slate-900">Certifications & Awards</h2>
+                    <div class="space-y-6">
+                        <div>
+                           <h3 class="text-xl font-semibold">Awards</h3>
+                            <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2">
+                                <li>1st Position, Appian AI Challenge Hackathon at IIT Madras</li>
+                                <li>Top Team, 30Hacks Hackathon by Hitachi at Delhi</li>
+                                <li>2nd Place, National Gen AI Hackathon by Onlinesales.ai Pune</li>
+                                <li>2nd Place, Blend's AI4Good Hackathon Hyderabad</li>
+                            </ul>
+                        </div>
+                         <div>
+                           <h3 class="text-xl font-semibold">Certifications</h3>
+                            <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2">
+                                <li>Introduction To Machine Learning - NPTEL (Swayam)</li>
+                                <li>Short Term Course in Python - NIT Warangal</li>
+                                <li>AWS Solutions Architect Associate - AWS Academy</li>
+                                <li>Data Analytics and Visualization - Accenture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="bg-slate-900 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+            <p class="max-w-xl mx-auto text-slate-300 mb-8">I'm currently seeking new opportunities and am open to collaboration. Feel free to reach out via email or connect with me on social media.</p>
+            <div class="flex justify-center items-center space-x-6 text-lg mb-8">
+                 <a href="mailto:ksaisumedh@gmail.com" class="hover:text-blue-400 transition">ksaisumedh@gmail.com</a>
+                 <span>&bull;</span>
+                 <p>8919543387</p>
+            </div>
+            <div class="flex justify-center items-center space-x-6">
+                <a href="https://github.com/whysumedh" target="_blank" class="text-slate-400 hover:text-white transition" aria-label="GitHub Profile">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sumedh-sai/" target="_blank" class="text-slate-400 hover:text-white transition" aria-label="LinkedIn Profile">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                </a>
+                <a href="https://leetcode.com/u/summdh/" target="_blank" class="hover:opacity-80 transition" aria-label="LeetCode Profile">
+                    <div class="w-8 h-8 bg-black rounded-md flex items-center justify-center p-1">
+                        <img src="https://assets.leetcode.com/static_assets/public/images/LeetCode_logo_rvs.png" alt="LeetCode Logo" class="w-full h-auto">
+                    </div>
+                </a>
+            </div>
+            <p class="mt-8 text-sm text-slate-500">&copy; 2025 Sumedh Kotha.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Section fade-in on scroll
+        const sections = document.querySelectorAll('.section-fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Generic Slider Setup
+        const setupSlider = (sliderId) => {
+            const sliderContainer = document.getElementById(sliderId);
+            if (sliderContainer) {
+                const track = sliderContainer.querySelector('.slider-track');
+                const prevButton = sliderContainer.querySelector('.slider-prev');
+                const nextButton = sliderContainer.querySelector('.slider-next');
+                const slides = Array.from(track.children);
+                const slideCount = slides.length;
+                let currentIndex = 0;
+
+                const goToSlide = (index) => {
+                    if (index < 0 || index >= slideCount) return;
+                    track.style.transform = `translateX(-${index * 100}%)`;
+                    currentIndex = index;
+                };
+
+                nextButton.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const nextIndex = (currentIndex + 1) % slideCount;
+                    goToSlide(nextIndex);
+                });
+
+                prevButton.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const prevIndex = (currentIndex - 1 + slideCount) % slideCount;
+                    goToSlide(prevIndex);
+                });
+            }
+        };
+
+        setupSlider('ai4good-slider');
+        setupSlider('appian-slider');
+        setupSlider('30hacks-slider');
+
+    </script>
+</body>
+</html>
+
